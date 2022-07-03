@@ -10,6 +10,7 @@
   --darkBlue: #1d3557;
   --border: 0.1rem solid rgba(0, 0, 0, 0.1);
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --btn-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   --color-danger: #ff7782;
   --color-success: #41f1b6;
   --color-warning: #ffbb55;
@@ -90,6 +91,11 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--white);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  text-align: center;
+  /* =============animation============== */
+  /* =============animation============== */
 }
 .header .adventure-text .adventure-text-main {
   display: block;
@@ -97,6 +103,8 @@ html {
   font-weight: 800;
   letter-spacing: 2rem;
   text-transform: uppercase;
+  -webkit-animation: moveLeft 2s ease-out;
+          animation: moveLeft 2s ease-out;
 }
 .header .adventure-text .adventure-text-sub {
   display: block;
@@ -104,6 +112,113 @@ html {
   font-weight: 400;
   letter-spacing: 2.1rem;
   text-transform: uppercase;
+  -webkit-animation: moveRight 2s ease-out;
+          animation: moveRight 2s ease-out;
+}
+.header .adventure-text .btn:link,
+.header .adventure-text .btn:visited {
+  text-transform: uppercase;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+}
+.header .adventure-text .header-btn {
+  background-color: var(--white);
+  color: var(--color-dark);
+  font-size: 1.4rem;
+  margin-top: 6rem;
+  border-radius: 0.5rem;
+  letter-spacing: 2px;
+  -webkit-animation: moveBottom 0.5s ease-out 0.75s;
+          animation: moveBottom 0.5s ease-out 0.75s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+.header .adventure-text .header-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--btn-shadow);
+}
+.header .adventure-text .header-btn:active {
+  transform: translateY(-1px);
+  box-shadow: var(--btn-shadow);
+}
+.header .adventure-text .header-btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  background: var(--white);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.header .adventure-text .header-btn:hover::after {
+  transform: scaleX(1.2) scaleY(1.4);
+  opacity: 0;
+}
+@-webkit-keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@-webkit-keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@-webkit-keyframes moveBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 /*================Header=================  *//*# sourceMappingURL=home.css.map */
