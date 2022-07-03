@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@500&family=Playfair+Display:ital,wght@0,800;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&display=swap");
+:root {
+  --dark: #292929;
+  --lightDark: #616161;
+  --white: #ffffff;
+  --orange: #fe8529;
+  --yellow: #eeb34b;
+  --red: #e3394b;
+  --lightRed: #fe4c6f;
+  --darkBlue: #1d3557;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-background: #ffffff;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1eb;
+  --color-dark: #363949;
+  --color-primary: #7380ec;
+  --color-primary-variant: #111e88;
+  --color-dark-variant: #677483;
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+  --box-shadow-admin: 0 2rem 3rem var(--color-light);
+}
+
+/* =============Dark Theme Variables============ */
+.dark-theme {
+  --white: #202528;
+  --dark: #ffffff;
+  --color-info-light: #181a1e;
+  --color-dark-variant: #deebf3;
+  --color-primary-variant: #5464d8;
+  --color-light: rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* =============Dark Theme Variables============ */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/*================Header=================  */
+.header {
+  height: 65vh;
+  background-image: linear-gradient(to right bottom, rgba(235, 240, 234, 0.425), rgba(50, 128, 89, 0.459)), url(/img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+.header .logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+.header .logo-box .logo {
+  height: 3.5rem;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #fff;
+  letter-spacing: 0.3rem;
+}
+.header .adventure-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+}
+.header .adventure-text .adventure-text-main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 800;
+  letter-spacing: 2rem;
+  text-transform: uppercase;
+}
+.header .adventure-text .adventure-text-sub {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: 2.1rem;
+  text-transform: uppercase;
+}
+
+/*================Header=================  *//*# sourceMappingURL=home.css.map */
