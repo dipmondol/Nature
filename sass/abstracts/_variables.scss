@@ -1,0 +1,54 @@
+
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+// font
+
+$default-font-size: 1.4rem;
+$font-size-medium: 1.6rem;
+$font-size-large: 2rem;
+
+$dark: #292929;
+$lightDark: #616161;
+$white: #ffffff;
+$orange: #fe8529;
+$yellow: #eeb34b;
+$red: #e3394b;
+$lightRed: #fe4c6f;
+$darkBlue: #1d3557;
+$border: 0.1rem solid rgba(0, 0, 0, 0.1);
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+$btn-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+$color-danger: #ff7782;
+$color-success: #41f1b6;
+$color-warning: #ffbb55;
+$color-background: #ffffff;
+$color-light: rgba(132, 139, 200, 0.18);
+$color-info-dark: #7d8da1;
+$color-info-light: #dce1eb;
+$color-dark: #363949;
+$color-about: #f7f7f7;
+$color-primary: #7380ec;
+$color-primary-variant: #111e88;
+$color-dark-variant: #677483;
+$card-border-radius: 2rem;
+$border-radius-1: 0.4rem;
+$border-radius-2: 0.8rem;
+$border-radius-3: 1.2rem;
+
+$card-padding: 1.8rem;
+$padding-1: 1.2rem;
+$box-shadow-admin: 0 2rem 3rem var($color-light);
+
+/* =============Dark Theme Variables============ */
+.dark-theme {
+  $white: #202528;
+  $dark: #ffffff;
+  $color-info-light: #181a1e;
+  $color-dark-variant: #deebf3;
+  $color-primary-variant: #5464d8;
+  $color-light: rgba(0, 0, 0, 0.4);
+  $box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+/* =============Dark Theme Variables============ */

@@ -1,0 +1,75 @@
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+
+  
+}
+.header-btn {
+  background-color: $white;
+  color: $dark;
+  font-size: 1.4rem;
+  margin-top: 6rem;
+  border-radius: 0.5rem;
+  letter-spacing: 2px;
+  animation: moveBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: $btn-shadow;
+  }
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: $btn-shadow;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    background: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  &:hover::after {
+    transform: scaleX(1.2) scaleY(1.4);
+    opacity: 0;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $font-size-medium;  
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid $color-primary;
+    background-color: #8bc6ec;
+    background-image: linear-gradient(135deg, #8bc6ec 0%, #4e56e4 80%);
+    color: $white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transform: all .2s;
+
+  }
+  &:hover {
+    background-color: #8bc6ec;
+    background-image: linear-gradient(135deg, #8bc6ec 0%, #070f9e 100%);
+    box-shadow: $box-shadow-admin;
+    transform: translateY(-2px);
+    
+  }
+  &:active{
+    box-shadow: $box-shadow-admin;
+    transform: translateY(-2px);
+  }
+}

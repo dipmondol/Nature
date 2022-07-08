@@ -1,0 +1,96 @@
+// Abstracts
+@import "abstracts/function";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+// components
+@import "components/button";
+@import "components/composition";
+
+// layouts
+@import "layout/grid";
+
+// pages
+
+// partials
+@import "partials/animations";
+@import "partials/base";
+@import "partials/reset";
+@import "partials/utilities";
+@import "partials/typography";
+
+
+
+/*================Header=================  */
+
+.header {
+  height: 65vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 240, 234, 0.425),
+      rgba(50, 128, 89, 0.459)
+    ),
+    url(/img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  .logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+
+    .logo {
+      height: 3.5rem;
+      font-size: 2.5rem;
+      font-weight: bolder;
+      color: $white;
+      letter-spacing: 0.3rem;
+    }
+  }
+
+  .adventure-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    backface-visibility: hidden;
+    text-align: center;
+
+    .adventure-text-main {
+      display: block;
+      font-size: 6rem;
+      font-weight: 600;
+      letter-spacing: 2rem;
+      text-transform: uppercase;
+      animation: moveLeft 2s ease-out;
+    }
+
+    .adventure-text-sub {
+      display: block;
+      font-size: 1.7rem;
+      font-weight: 400;
+      letter-spacing: 2.1rem;
+      text-transform: uppercase;
+      animation: moveRight 2s ease-out;
+    }
+    
+    
+
+    /* =============animation============== */
+  }
+}
+/*================Header=================  */
+
+/* =================About Section=============== */
+
+.section-about{
+  background-color: $color-about;
+  padding: 15rem 0;
+
+}
+
+
+
+/* =================End of About Section=============== */
