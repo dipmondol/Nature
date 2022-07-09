@@ -6,6 +6,7 @@
 // components
 @import "components/button";
 @import "components/composition";
+@import "components/feature-box";
 
 // layouts
 @import "layout/grid";
@@ -87,8 +88,23 @@
 
 .section-about{
   background-color: $color-about;
-  padding: 15rem 0;
+  padding: 5rem 0;
 
+}
+
+.features-section{
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(235, 240, 234, 0.425),
+    rgba(50, 128, 89, 0.459)
+  ),
+  url(/img/nat-4.jpg);
+  background-size: cover;
+  
+
+ 
+  
 }
 
 

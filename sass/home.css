@@ -104,6 +104,45 @@
   transform: scale(0.95);
 }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 1.4rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  width: 30rem;
+  height: 35rem;
+  box-shadow: 0 1rem 2rem rgba(41, 41, 41, 0.9);
+  transition: transform 0.2s;
+  margin-right: 6rem;
+}
+.feature-box span {
+  font-size: 6rem;
+  margin-bottom: 0.5rem;
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #4e56e4 80%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.feature-box .feature-heading {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+.feature-box-text {
+  text-align: justify;
+}
+.feature-box .feature-see-more {
+  margin-top: 1rem;
+  text-align: right;
+  transition: transform 0.2s;
+}
+.feature-box .feature-see-more:hover {
+  transform: translateY(-2px);
+}
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -125,30 +164,30 @@
   padding: 1rem;
 }
 .row [class^=col-]:not(:last-child) {
-  margin-right: 6rem;
+  margin-right: 12rem;
 }
 .row .col-1-of-2 {
-  width: calc((100% - 6rem) / 2);
+  width: calc((100% - 12rem) / 2);
 }
 .row .col-1-of-3 {
-  width: calc((100% - 2 * 6rem) / 3);
+  width: calc((100% - 2 * 12rem) / 3);
 }
 .row .col-1-of-4 {
-  width: calc((100% - 3 * 6rem) / 4);
+  width: calc((100% - 3 * 12rem) / 4);
 }
 .row .col-2-of-4 {
   width: calc(
-      2 * ((100% - 3 * 6rem) / 4) + 6rem
+      2 * ((100% - 3 * 12rem) / 4) + 12rem
     );
 }
 .row .col-2-of-3 {
   width: calc(
-      2 * ((100% - 2 * 6rem) / 3) + 6rem
+      2 * ((100% - 2 * 12rem) / 3) + 12rem
     );
 }
 .row .col-3-of-4 {
   width: calc(
-      3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem
+      3 * ((100% - 3 * 12rem) / 4) + 2 * 12rem
     );
 }
 
@@ -235,27 +274,27 @@ html {
           user-select: none;
 }
 
-.about-div {
-  width: 100%;
-  margin-bottom: 5rem;
+main .about-div {
+  max-width: 114rem;
+  margin: 0 auto;
+  margin-bottom: 7rem;
+  padding: 1rem;
 }
-.about-div .about-heading {
+main .about-div .about-heading {
   font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
+  text-transform: capitalize;
+  font-weight: 600;
   display: inline-block;
-  background-color: #8bc6ec;
-  background-image: linear-gradient(135deg, #8bc6ec 0%, #070f9e 100%);
-  -webkit-background-clip: text;
-  color: transparent;
+  color: #117ac0;
+  margin: 0 auto;
 }
 
 .about-sub-heading {
   font-size: 1.5rem;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 1rem;
-  color: #8bc6ec;
+  color: rgba(67, 161, 223, 0.8980392157);
   letter-spacing: 1px;
 }
 
@@ -320,7 +359,13 @@ html {
 /* =================About Section=============== */
 .section-about {
   background-color: #f7f7f7;
+  padding: 5rem 0;
+}
+
+.features-section {
   padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, rgba(235, 240, 234, 0.425), rgba(50, 128, 89, 0.459)), url(/img/nat-4.jpg);
+  background-size: cover;
 }
 
 /* =================End of About Section=============== *//*# sourceMappingURL=home.css.map */

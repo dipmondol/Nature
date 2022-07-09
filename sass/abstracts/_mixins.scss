@@ -5,3 +5,11 @@
         clear: both;
     }
 }
+
+@mixin gradient {
+     background-color: #8bc6ec;
+        background-image: linear-gradient(135deg, #8bc6ec 0%, #4e56e4 80%);
+        -webkit-background-clip: text;
+        color: transparent;
+    
+}
