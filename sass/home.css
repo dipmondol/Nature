@@ -143,6 +143,69 @@
   transform: translateY(-5px);
 }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+}
+.card-side {
+  height: 45rem;
+  background-color: #ffffff;
+  color: #ffffff;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  box-shadow: 0 1rem 3rem rgba(41, 41, 41, 0.6);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.card-side-back {
+  transform: rotateY(180deg);
+}
+.card-side-back-1 {
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #070f9e 100%);
+}
+.card:hover .card-side-front {
+  transform: rotateY(-180deg);
+}
+.card:hover .card-side-back {
+  transform: rotateY(0deg);
+}
+.card .card-picture {
+  background-size: cover;
+  height: 20rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.card .card-picture-1 {
+  background-image: url(/img/nat-5.jpg);
+}
+.card-heading-bg {
+  height: 8rem;
+  width: 8rem;
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #070f9e 100%);
+  position: absolute;
+  top: 13rem;
+  right: 2rem;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  filter: drop-shadow(5rem 5rem rgba(41, 41, 41, 0.8));
+}
+.card-heading-bg .card-heading {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  top: 1.5rem;
+  position: absolute;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -285,7 +348,7 @@ main .about-div .about-heading {
   text-transform: capitalize;
   font-weight: 600;
   display: inline-block;
-  color: #117ac0;
+  color: rgba(67, 161, 223, 0.8980392157);
   margin: 0 auto;
 }
 
@@ -303,6 +366,21 @@ main .about-div .about-heading {
 }
 .paragraph:not(:last-child) {
   margin-bottom: 3rem;
+}
+
+.package-div {
+  max-width: 114rem;
+  margin: 0 auto;
+  margin-bottom: 7rem;
+  padding: 1rem;
+}
+.package-div .package-header {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: inline-block;
+  color: rgba(67, 161, 223, 0.8980392157);
+  margin: 0 auto;
 }
 
 /*================Header=================  */
@@ -363,9 +441,14 @@ main .about-div .about-heading {
 }
 
 .features-section {
-  padding: 15rem 0;
+  padding: 10rem 0;
   background-image: linear-gradient(to right bottom, rgba(235, 240, 234, 0.425), rgba(50, 128, 89, 0.459)), url(/img/nat-4.jpg);
   background-size: cover;
+}
+
+.tour-package-section {
+  padding: 5rem 0 38rem 0;
+  background-color: #f7f7f7;
 }
 
 /* =================End of About Section=============== *//*# sourceMappingURL=home.css.map */

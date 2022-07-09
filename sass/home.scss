@@ -7,6 +7,7 @@
 @import "components/button";
 @import "components/composition";
 @import "components/feature-box";
+@import "components/card";
 
 // layouts
 @import "layout/grid";
@@ -93,7 +94,7 @@
 }
 
 .features-section{
-  padding: 15rem 0;
+  padding: 10rem 0;
   background-image: linear-gradient(
     to right bottom,
     rgba(235, 240, 234, 0.425),
@@ -105,6 +106,12 @@
 
  
   
+}
+
+.tour-package-section{
+  padding: 5rem 0 38rem 0;
+  background-color: $color-about;
+
 }
 
 
