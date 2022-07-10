@@ -8,6 +8,7 @@
 @import "components/composition";
 @import "components/feature-box";
 @import "components/card";
+@import "components/story";
 
 // layouts
 @import "layout/grid";
@@ -20,8 +21,6 @@
 @import "partials/reset";
 @import "partials/utilities";
 @import "partials/typography";
-
-
 
 /*================Header=================  */
 
@@ -77,8 +76,6 @@
       text-transform: uppercase;
       animation: moveRight 2s ease-out;
     }
-    
-    
 
     /* =============animation============== */
   }
@@ -87,33 +84,30 @@
 
 /* =================About Section=============== */
 
-.section-about{
+.section-about {
   background-color: $color-about;
   padding: 5rem 0;
-
 }
 
-.features-section{
+.features-section {
   padding: 10rem 0;
   background-image: linear-gradient(
-    to right bottom,
-    rgba(235, 240, 234, 0.425),
-    rgba(50, 128, 89, 0.459)
-  ),
-  url(/img/nat-4.jpg);
+      to right bottom,
+      rgba(235, 240, 234, 0.425),
+      rgba(50, 128, 89, 0.459)
+    ),
+    url(/img/nat-4.jpg);
   background-size: cover;
-  
-
- 
-  
 }
 
-.tour-package-section{
+.tour-package-section {
   padding: 5rem 0 38rem 0;
   background-color: $color-about;
-
 }
-
-
+.review-section {
+  padding: 15rem 0;
+  background-color: $color-about;
+  
+}
 
 /* =================End of About Section=============== */

@@ -1,16 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Atma:wght@500&family=Playfair+Display:ital,wght@0,800;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&display=swap");
 
 main .about-div {
- 
   max-width: $grid-width;
   margin: 0 auto;
   margin-bottom: 7rem;
   padding: 1rem;
-
- 
-
-
- 
 
   .about-heading {
     font-size: 3.5rem;
@@ -19,12 +13,7 @@ main .about-div {
     display: inline-block;
     color: $color-sub-heading;
     margin: 0 auto;
-   
-   
-    
   }
-
-  
 }
 .about-sub-heading {
   font-size: 1.5rem;
@@ -33,7 +22,6 @@ main .about-div {
   margin-bottom: 1rem;
   color: $color-sub-heading;
   letter-spacing: 1px;
-  
 }
 .paragraph {
   font-size: 1.3rem;
@@ -42,28 +30,36 @@ main .about-div {
     margin-bottom: 3rem;
   }
 }
-.feature-heading{
-  
+.feature-heading {
 }
 
-
-.package-div{
-
+.package-div {
   max-width: $grid-width;
   margin: 0 auto;
   margin-bottom: 7rem;
   padding: 1rem;
 
-  .package-header{
+  .package-header {
     font-size: 3.5rem;
     text-transform: capitalize;
     font-weight: 600;
     display: inline-block;
     color: $color-sub-heading;
     margin: 0 auto;
-   
-   
-    
   }
 }
+.review-div {
+  max-width: $grid-width;
+  margin: 0 auto;
+  margin-bottom: 7rem;
+  padding: 1rem;
 
+  .review-header {
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    display: inline-block;
+    color: $color-sub-heading;
+    margin: 0 auto;
+  }
+}

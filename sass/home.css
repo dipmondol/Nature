@@ -244,6 +244,25 @@
   font-weight: 100;
 }
 
+.story {
+  width: 100%;
+  height: 25rem;
+  box-shadow: 0 2rem 4rem rgba(41, 41, 41, 0.3);
+  background-color: #ffffff;
+  padding: 7rem;
+  border-radius: 5px;
+  font-size: 1.4rem;
+}
+.story-image {
+  height: 100%;
+  box-shadow: 0 1rem 2rem rgba(41, 41, 41, 0.5);
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle(50% at 50% 50%);
+  transform: translateX(-3rem);
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -421,6 +440,21 @@ main .about-div .about-heading {
   margin: 0 auto;
 }
 
+.review-div {
+  max-width: 114rem;
+  margin: 0 auto;
+  margin-bottom: 7rem;
+  padding: 1rem;
+}
+.review-div .review-header {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: inline-block;
+  color: rgba(67, 161, 223, 0.8980392157);
+  margin: 0 auto;
+}
+
 /*================Header=================  */
 .header {
   height: 65vh;
@@ -486,6 +520,11 @@ main .about-div .about-heading {
 
 .tour-package-section {
   padding: 5rem 0 38rem 0;
+  background-color: #f7f7f7;
+}
+
+.review-section {
+  padding: 15rem 0;
   background-color: #f7f7f7;
 }
 
