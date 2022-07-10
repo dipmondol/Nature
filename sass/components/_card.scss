@@ -50,6 +50,12 @@
         background-image:  url(/img/nat-5.jpg);
         
     }
+    &-2{
+      background-image: url(/img/nat-3.jpg);
+    }
+    &-3{
+      background-image: url(/img/nat-6.jpg);
+    }
 
   }
   &-heading-bg{
@@ -81,7 +87,48 @@
      
       }
      
-  
+  &-details{
+
+    ul{
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+      li{
+        text-align: center;
+        font-size: $default-font-size;
+        padding: 1rem;
+        color: $dark;
+        border-bottom: 1px solid #f3eeee;
+
+      }
+    }
+
+  }
+
+  .card-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+
+    .card-price-box{
+      text-align: center;
+      margin-bottom: 5rem;
+
+    }
+    .card-price-only{
+
+      font-size: $default-font-size;
+      text-transform: uppercase;
+    }
+    .card-price-value{
+      font-size: 6rem;
+      font-weight: 100;
+    }
+    
+  }
  
 
 
