@@ -36,7 +36,7 @@ main .about-div {
 .package-div {
   max-width: $grid-width;
   margin: 0 auto;
-  margin-bottom: 7rem;
+  margin-bottom: 1rem;
   padding: 1rem;
 
   .package-header {
@@ -44,14 +44,14 @@ main .about-div {
     text-transform: capitalize;
     font-weight: 600;
     display: inline-block;
-    color: $color-sub-heading;
+    color: rgba($darkBlue, .8);
     margin: 0 auto;
   }
 }
 .review-div {
   max-width: $grid-width;
   margin: 0 auto;
-  margin-bottom: 7rem;
+  margin-bottom: 1rem;
   padding: 1rem;
 
   .review-header {
@@ -59,7 +59,22 @@ main .about-div {
     text-transform: capitalize;
     font-weight: 600;
     display: inline-block;
-    color: $color-sub-heading;
+    color: rgba($darkBlue, .9);
+    margin: 0 auto;
+  }
+}
+.book-div {
+  max-width: $grid-width;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  .book-header {
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    display: inline-block;
+    color: rgba($darkBlue, .9);
     margin: 0 auto;
   }
 }

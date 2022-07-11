@@ -1,34 +1,52 @@
+
 .story {
   width: 100%;
-  height: 25rem;
-  box-shadow: 0 2rem 4rem rgba($dark, 0.3);
-  background-color: $white;
-  padding: 7rem;
+ 
+  box-shadow: 0 1rem 4rem rgba($dark, 0.3);
+  background-color: rgba( $white, .6);
+  padding: 2rem 7rem;
   border-radius: 5px;
-  font-size: $default-font-size;
-
-//   &-shape {
-//     width: 10rem;
-//     height: 10rem;
-//     float: left;
-//     background: $color-dark-variant;
-//     // -webkit-clip-path: circle(50% at 50% 50%);
-//     // clip-path: circle(50% at 50% 50%);
-//     shape-outside: circle(50% at 50% 50%);
-//     transform: translateX(-3rem);
-    
-    
-//   }
-  &-image{
-
-    height: 100% ;
-    box-shadow: 0 1rem 2rem rgba($dark, 0.5);
+  font-size: $default-font-size; 
+  
+  h3{
+    color: rgba($darkBlue, .9);
+  }
+   
+   
+  &-image {
+    height: 100%;
+    box-shadow: 0 .5rem 2rem rgba($dark, 0.5);
     border: 2px solid $white;
     border-radius: 50%;
     float: left;
-    shape-outside: circle(50% at 50% 50%);
-    transform: translateX(-3rem);
- 
+    transform: translateX(-2rem) scale(1);
+    
+   
+    &:hover{
+      transform: translateX(-2rem) scale(1.1);
+    }
+  }
+
+
+  
+  
+
+}
+.bg-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .5;
+  overflow: hidden;
+
+  .bg-video-content{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 
   }
+
 }

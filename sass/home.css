@@ -246,21 +246,42 @@
 
 .story {
   width: 100%;
-  height: 25rem;
-  box-shadow: 0 2rem 4rem rgba(41, 41, 41, 0.3);
-  background-color: #ffffff;
-  padding: 7rem;
+  box-shadow: 0 1rem 4rem rgba(41, 41, 41, 0.3);
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 2rem 7rem;
   border-radius: 5px;
   font-size: 1.4rem;
 }
+.story h3 {
+  color: rgba(29, 53, 87, 0.9);
+}
 .story-image {
   height: 100%;
-  box-shadow: 0 1rem 2rem rgba(41, 41, 41, 0.5);
+  box-shadow: 0 0.5rem 2rem rgba(41, 41, 41, 0.5);
   border: 2px solid #ffffff;
   border-radius: 50%;
   float: left;
-  shape-outside: circle(50% at 50% 50%);
-  transform: translateX(-3rem);
+  transform: translateX(-2rem) scale(1);
+}
+.story-image:hover {
+  transform: translateX(-2rem) scale(1.1);
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  overflow: hidden;
+}
+.bg-video .bg-video-content {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .row {
@@ -428,7 +449,7 @@ main .about-div .about-heading {
 .package-div {
   max-width: 114rem;
   margin: 0 auto;
-  margin-bottom: 7rem;
+  margin-bottom: 1rem;
   padding: 1rem;
 }
 .package-div .package-header {
@@ -436,14 +457,14 @@ main .about-div .about-heading {
   text-transform: capitalize;
   font-weight: 600;
   display: inline-block;
-  color: rgba(67, 161, 223, 0.8980392157);
+  color: rgba(29, 53, 87, 0.8);
   margin: 0 auto;
 }
 
 .review-div {
   max-width: 114rem;
   margin: 0 auto;
-  margin-bottom: 7rem;
+  margin-bottom: 1rem;
   padding: 1rem;
 }
 .review-div .review-header {
@@ -451,7 +472,22 @@ main .about-div .about-heading {
   text-transform: capitalize;
   font-weight: 600;
   display: inline-block;
-  color: rgba(67, 161, 223, 0.8980392157);
+  color: rgba(29, 53, 87, 0.9);
+  margin: 0 auto;
+}
+
+.book-div {
+  max-width: 114rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.book-div .book-header {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: inline-block;
+  color: rgba(29, 53, 87, 0.9);
   margin: 0 auto;
 }
 
@@ -524,8 +560,25 @@ main .about-div .about-heading {
 }
 
 .review-section {
+  position: relative;
   padding: 15rem 0;
-  background-color: #f7f7f7;
+}
+
+.section-book {
+  padding: 10rem 0;
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #4e56e4 100%);
+}
+.section-book .book {
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(/img/nat-10.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 0.5rem 4rem rgba(41, 41, 41, 0.5);
+  height: 50rem;
+}
+.section-book .book .book-form {
+  width: 50%;
+  padding: 6rem;
 }
 
 /* =================End of About Section=============== *//*# sourceMappingURL=home.css.map */
