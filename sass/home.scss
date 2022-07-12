@@ -9,6 +9,7 @@
 @import "components/feature-box";
 @import "components/card";
 @import "components/story";
+@import "components/booking";
 
 // layouts
 @import "layout/grid";
@@ -130,7 +131,52 @@
       width: 50%;
       padding: 6rem;
     }
+
+
+    
+    
   }
 }
 
 /* =================End of About Section=============== */
+
+/* ==============Footer=============== */
+.footer{
+  background-color: $dark;
+  color: $white;
+
+  .logo {
+    height: 3.5rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: $white;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    padding: 2rem;
+  }
+  .footer-nav{
+    
+
+    .footer-item{
+      text-decoration: none;
+      font-size: $font-size-medium;
+
+    
+      
+      .footer-nav-link{
+     
+      color: $white;
+    }
+    
+    }
+  }
+
+  .copy-right-box{
+    text-align: center;
+    border-top: 1px solid rgba(146, 145, 145, 0.39);
+    font-size: 1.2rem;
+  }
+
+}
+
+/* ==============Footer=============== */
