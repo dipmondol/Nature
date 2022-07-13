@@ -13,6 +13,7 @@
 
 // layouts
 @import "layout/grid";
+@import "layout/navigation";
 
 // pages
 
@@ -106,77 +107,121 @@
   background-color: $color-about;
 }
 .review-section {
-  
   position: relative;
   padding: 15rem 0;
- 
 }
 
-.section-book{
+.section-book {
   padding: 10rem 0;
   background-color: #8bc6ec;
   background-image: linear-gradient(135deg, #8bc6ec 0%, #4e56e4 100%);
 
-  .book{
-    background-image: linear-gradient(90deg, rgba($white, .9) 0%,
-    rgba($white, .9)50%,
-    transparent 50%),
-    url(/img/nat-10.jpg);
+  .book {
+    background-image: linear-gradient(
+        90deg,
+        rgba($white, 0.9) 0%,
+        rgba($white, 0.9) 50%,
+        transparent 50%
+      ),
+      url(/img/nat-10.jpg);
     background-size: 100%;
     border-radius: 3px;
-    box-shadow: 0 .5rem 4rem rgba($dark, .5);
+    box-shadow: 0 0.5rem 4rem rgba($dark, 0.5);
     height: 50rem;
 
-    .book-form{
+    .book-form {
       width: 50%;
       padding: 6rem;
     }
-
-
-    
-    
   }
 }
 
 /* =================End of About Section=============== */
 
 /* ==============Footer=============== */
-.footer{
+.footer {
   background-color: $dark;
   color: $white;
 
   .logo {
-    height: 3.5rem;
-    font-size: 2.5rem;
+    height: 5.5rem;
+    
+    font-size: 3.5rem;
     font-weight: bolder;
     color: $white;
     letter-spacing: 0.3rem;
-    text-align: center;
-    padding: 2rem;
+    text-align: left;
+    padding: 2rem 0 0 1rem;
+    display: block;
+    margin: 0 38rem 3rem 38rem;
   }
-  .footer-nav{
+  .footer-nav {
     
 
-    .footer-item{
-      text-decoration: none;
-      font-size: $font-size-medium;
-
-    
+    .footer-list {
+      list-style: none;
       
-      .footer-nav-link{
-     
+    }
+
+    .footer-item {
+      display: inline-block;
+      font-size: $font-size-medium;
       color: $white;
+
+      &:not(:last-child){
+        margin-right: 1rem;
+      }
+     
+
     }
-    
+    .footer-nav-link{
+      color: $white;
+
+      &:link,
+      &:visited{
+        color: #eee;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+      }
+      &:hover,
+      &:active{
+          color: #4e56e4;
+          padding: .5rem;
+          box-shadow: 0 1rem 2rem rgba(rgb(0, 0, 0), .7);
+          
+      }
     }
+
+   
+
+  }
+  .footer-address{
+    .footer-list {
+      list-style: none;
+      
+    }
+
+    .footer-item {
+      
+      font-size: $font-size-medium;    
+
+    }
+    .footer-nav-link{
+      color: #eee;
+      
+      &.email{
+        text-transform: lowercase;
+      }
+    }
+
   }
 
-  .copy-right-box{
+  .copy-right-box {
     text-align: center;
     border-top: 1px solid rgba(146, 145, 145, 0.39);
     font-size: 1.2rem;
   }
-
 }
 
 /* ==============Footer=============== */
