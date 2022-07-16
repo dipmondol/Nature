@@ -379,6 +379,7 @@
   right: 6rem;
   border-radius: 50%;
   z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(41, 41, 41, 0.5);
 }
 .navigation .navigation-background {
   height: 6rem;
@@ -391,15 +392,17 @@
   background-image: radial-gradient(#8bc6ec 0%, #4e56e4 80%);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  transform: scale(80);
+  transition: transform 0.7s cubic-bezier(0.83, 0, 0.17, 1);
 }
 .navigation .navigation-nav {
   height: 100vh;
-  width: 100%;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0.7s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 .navigation .navigation-list {
   position: absolute;
@@ -428,6 +431,13 @@
   color: #292929;
   border-radius: 3px;
   transform: translateX(1rem);
+}
+.navigation .navigation_checkbox:checked ~ .navigation-background {
+  transform: scale(80);
+}
+.navigation .navigation_checkbox:checked ~ .navigation-nav {
+  opacity: 1;
+  width: 100%;
 }
 
 /* =============animation============== */
