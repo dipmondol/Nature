@@ -319,6 +319,74 @@
   text-align: center;
 }
 
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(41, 41, 41, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup .popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 50rem;
+  background-color: #ffffff;
+  box-shadow: 0 2rem 4rem rgba(41, 41, 41, 0.2);
+  border-radius: 3px;
+  display: table;
+  overflow: hidden;
+}
+.popup .popup-left {
+  width: 33.33333333%;
+  display: table-cell;
+  vertical-align: middle;
+}
+.popup .popup-left .popup-img {
+  display: block;
+  width: 100%;
+}
+.popup .popup-right {
+  width: 66.6666666%;
+  display: table-cell;
+  vertical-align: top;
+  padding: 3rem 5rem;
+}
+.popup .popup-right .popup-heading {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: inline-block;
+  color: rgba(67, 161, 223, 0.8980392157);
+  margin-bottom: 2rem;
+}
+.popup .popup-right .popup-text {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  text-align: justify;
+}
+.popup .btn-text {
+  text-transform: capitalize;
+  width: 20%;
+  text-align: center;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -372,18 +440,19 @@
 }
 .navigation .navigation-button {
   background-color: #ffffff;
-  height: 7rem;
-  width: 7rem;
+  height: 6rem;
+  width: 6rem;
   position: fixed;
   top: 6rem;
   right: 6rem;
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(41, 41, 41, 0.5);
+  text-align: center;
 }
 .navigation .navigation-background {
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
   position: fixed;
   top: 6.5rem;
@@ -438,6 +507,22 @@
 .navigation .navigation_checkbox:checked ~ .navigation-nav {
   opacity: 1;
   width: 100%;
+}
+.navigation .nav-icon {
+  margin-top: 1.5rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.navigation .navigation-button .close-icon {
+  display: none;
+}
+.navigation .navigation_checkbox:checked ~ .navigation-button .nav-icon {
+  display: none;
+}
+.navigation .navigation_checkbox:checked ~ .navigation-button .close-icon {
+  display: block;
+  cursor: pointer;
+  margin-top: 1.8rem;
 }
 
 /* =============animation============== */
