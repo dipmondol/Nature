@@ -12,7 +12,6 @@
 @import "components/booking";
 @import "components/popup";
 
-
 // layouts
 @import "layout/grid";
 @import "layout/navigation";
@@ -39,6 +38,10 @@
   background-size: cover;
   background-position: top;
   position: relative;
+
+  @include respond(tab-port) {
+    height: 50vh;
+  }
 
   .logo-box {
     position: absolute;
@@ -90,7 +93,8 @@
 
 .section-about {
   background-color: $color-about;
-  padding: 5rem 0;
+  // padding: 5rem 0;
+  height: 100vh;
 }
 
 .features-section {
@@ -145,84 +149,179 @@
   background-color: $dark;
   color: $white;
 
-  .logo {
-    height: 5.5rem;
-    
-    font-size: 3.5rem;
-    font-weight: bolder;
-    color: $white;
-    letter-spacing: 0.3rem;
-    text-align: left;
-    padding: 2rem 0 0 1rem;
-    display: block;
-    margin: 0 38rem 3rem 38rem;
-  }
-  .footer-nav {
-    
+  @include respond(tab-port) {
+    // padding-left: 8rem 0;
 
-    .footer-list {
-      list-style: none;
-      
+    width: 100%;
+  }
+  .footer-wrapper {
+    padding: 5rem 10rem;
+    display: flex;
+    gap: 1rem;
+
+    justify-content: space-around;
+
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
     }
 
-    .footer-item {
-      display: inline-block;
-      font-size: $font-size-medium;
-      color: $white;
-
-      &:not(:last-child){
-        margin-right: 1rem;
-      }
+    .col-1 {
      
+      padding: 1rem;
 
-    }
-    .footer-nav-link{
-      color: $white;
-
-      &:link,
-      &:visited{
-        color: #eee;
-        text-decoration: none;
-        text-transform: uppercase;
-        display: inline-block;
+      .logo-box {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
       }
-      &:hover,
-      &:active{
-          color: #4e56e4;
-          padding: .5rem;
-          box-shadow: 0 1rem 2rem rgba(rgb(0, 0, 0), .7);
-          
+      .social {
+        font-size: 2.5rem;
+        .facebook {
+          :hover {
+            color: #4267b2;
+          }
+        }
+        .twitter {
+          :hover {
+            color: #00acee;
+          }
+        }
+        .linkedin {
+          :hover {
+            color: #0072b1;
+          }
+        }
+        .pinterest {
+          :hover {
+            color: #e60023;
+          }
+        }
+
+        span:not(:last-child) {
+          margin-right: 2rem;
+        }
+        a {
+          color: $white;
+        }
+      }
+
+      .footer-address {
+        margin-top: 1rem;
+        .footer-list {
+          list-style: none;
+        }
+        .footer-item a {
+          color: $white;
+          font-size: 1.6rem;
+        }
       }
     }
 
-   
+    .col-2 {
+      
+      padding: 1rem;
 
+      .footer-nav {
+        display: flex;
+        flex-direction: column;
+
+        .footer-list {
+          span {
+            font-size: 3.5rem;
+          }
+        }
+        .footer-item {
+          list-style: none;
+          font-size: 1.6rem;
+          color: $white;
+
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+        }
+        .footer-nav-link {
+          color: $white;
+
+          &:link,
+          &:visited {
+            color: #eee;
+            text-decoration: none;
+          }
+          &:hover,
+          &:active {
+            color: #4e56e4;
+            transform: translateX(5px);
+          }
+        }
+      }
+    }
+
+    .col-3 {
+      
+      padding: 1rem;
+
+      .footer-support {
+        .footer-support-list {
+          list-style: none;
+          span {
+            font-size: 3.5rem;
+          }
+        }
+        .footer-support-item {
+          margin-bottom: 1rem;
+          a {
+            color: $white;
+            font-size: 1.6rem;
+
+            &:hover,
+            &:active {
+              color: #4e56e4;
+              transform: translateX(5px);
+            }
+          }
+        }
+
+        .subscribe {
+          display: flex;
+          .emailField {
+            input {
+              padding: 1rem;
+              border-radius: 5px;
+            }
+          }
+          .subBtn {
+            background-color: #8bc6ec;
+            background-image: linear-gradient(135deg, #8bc6ec 0%, #4e56e4 80%);
+            cursor: pointer;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+            margin-left: -2rem;
+
+            i {
+              color: $white;
+              font-size: 2.5rem;
+              margin-top: 0.5rem;
+              padding: 0 1rem;
+            }
+          }
+        }
+      }
+    }
   }
-  .footer-address{
-    .footer-list {
-      list-style: none;
-      
-    }
-
-    .footer-item {
-      
-      font-size: $font-size-medium;    
-
-    }
-    .footer-nav-link{
-      color: #eee;
-      
-      &.email{
-        text-transform: lowercase;
-      }
-    }
-
-  }
-
   .copy-right-box {
+    background: rgba(15, 15, 15, 0.829);
+    height: 5rem;
     text-align: center;
-    border-top: 1px solid rgba(146, 145, 145, 0.39);
-    font-size: 1.2rem;
+
+    // border-top: 1px solid rgba(146, 145, 145, 0.39);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .copy-right {
+      font-size: 1.4rem;
+    }
   }
 }
 

@@ -5,6 +5,14 @@ main .about-div {
   margin: 0 auto;
   margin-bottom: 7rem;
   padding: 1rem;
+  @include respond(tab-port) {
+    
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 5.4rem;
+    
+
+  }
 
   .about-heading {
     font-size: 3.5rem;
@@ -13,8 +21,18 @@ main .about-div {
     display: inline-block;
     color: $color-sub-heading;
     margin: 0 auto;
+
+    @include respond(tab-port) {
+     
+      font-size: 2.5rem;
+     
+      
+
+    }
   }
+ 
 }
+
 .about-sub-heading {
   font-size: 1.5rem;
   font-weight: 700;
@@ -23,6 +41,9 @@ main .about-div {
   color: $color-sub-heading;
   letter-spacing: 1px;
 }
+.btn-text{
+  margin-bottom: 3rem;
+}
 .paragraph {
   font-size: 1.3rem;
 
@@ -30,6 +51,8 @@ main .about-div {
     margin-bottom: 3rem;
   }
 }
+
+
 .feature-heading {
 }
 

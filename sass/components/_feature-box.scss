@@ -10,6 +10,14 @@
     transition: transform .2s;
     margin-right: 6rem;
 
+    @include respond(tab-port) {
+        width: 50rem;  
+        padding: 5rem; 
+
+        
+  
+      }
+
     span{
         
         font-size: 6rem;

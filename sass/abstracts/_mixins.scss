@@ -20,3 +20,35 @@
   bottom: 50%;
   transform: translate(-50%, -50%);
 }
+
+// Media query
+@mixin mobileResponsive {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+// breakpoints
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 600px) {
+      @content
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 900px) {
+      @content
+    }
+  }
+  @if $breakpoint == tab-landscape {
+    @media (max-width: 1200px) {
+      @content
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 1800px) {
+      @content
+    }
+  }
+}
+
+// Media Query

@@ -7,19 +7,26 @@
     height: 6rem;
     width: 6rem;
     position: fixed;
-    top: 6rem;
+    top: 2rem;
     right: 6rem;
     border-radius: 50%;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba($dark, 0.5);
     text-align: center;
+    @include respond(tab-port) {
+
+      top: 4rem;
+      right: 4rem;
+
+    }
+    
   }
   .navigation-background {
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
     position: fixed;
-    top: 6.5rem;
+    top: 2rem;
     right: 6.5rem;
     background-color: #8bc6ec;
     background-image: radial-gradient(#8bc6ec 0%, #4e56e4 80%);
@@ -27,6 +34,12 @@
     z-index: 1000;
     transition: transform 0.7s cubic-bezier(0.83, 0, 0.17, 1);
     // transform: scale(80);
+    @include respond(tab-port) {
+
+      top: 4.5rem;
+      right: 4.5rem;
+
+    }
   }
   .navigation-nav {
     height: 100vh;
