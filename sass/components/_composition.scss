@@ -1,6 +1,12 @@
 .composition {
   position: relative;
 
+  @include respond(phone){
+    margin: 0 auto;
+    
+    
+  }
+
   &_photo {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba($dark, 0.4);
@@ -8,6 +14,13 @@
     z-index: 10;
     transition: all .2s;
     outline-offset: 1rem;
+
+    @include respond(phone){
+      width: 40%;
+      
+    }
+    
+  
 
     &-p1 {
       left: 0;
@@ -20,13 +33,35 @@
     &-p3 {
       left: 20%;
       top: 15rem;
+
     }
+    @include respond(phone){
+      &-p1 {
+        left: 6rem;
+        top: -3rem;
+      }
+      &-p2 {
+        right: 6rem;
+        top: 3rem;
+      }
+      &-p3 {
+        left: 25%;
+        top: 13rem;
+  
+      }
+      
+    }
+
+
 
     &:hover{
         transform: scale(1.05);
         box-shadow: 0 1rem 3rem rgba($dark, 0.5);
         z-index: 20;
         outline: .5rem solid $white;
+
+       
+
     }
   }
   &:hover &_photo:not(:hover){

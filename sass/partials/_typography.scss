@@ -1,15 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Atma:wght@500&family=Playfair+Display:ital,wght@0,800;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&display=swap");
 
-main .about-div {
+.about-div {
   max-width: $grid-width;
   margin: 0 auto;
   margin-bottom: 7rem;
   padding: 1rem;
-  @include respond(tab-port) {
+  
+  @include respond(phone) {
     
-    text-align: center;
-    margin: 0 auto;
-    padding-left: 5.4rem;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1rem;
+   
+   
     
 
   }
@@ -22,9 +25,11 @@ main .about-div {
     color: $color-sub-heading;
     margin: 0 auto;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
      
-      font-size: 2.5rem;
+      font-size: 2rem;
+      display: inline-block;
+      padding: 0;
      
       
 
@@ -84,6 +89,12 @@ main .about-div {
     display: inline-block;
     color: rgba($darkBlue, .9);
     margin: 0 auto;
+    
+    @include respond(phone){
+     display: flex;
+     justify-content: center;
+      
+     }
   }
 }
 .book-div {

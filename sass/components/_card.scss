@@ -1,7 +1,27 @@
+.tour-package-section .row{
+
+
+ 
+}
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
+  @include respond(phone){
+   
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50rem;
+   
+   
+
+
+    
+  }
+
+
+ 
+ 
 
   &-side {
     height: 45rem;
