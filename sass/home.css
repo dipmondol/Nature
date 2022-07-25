@@ -174,6 +174,63 @@
   transform: translateY(-5px);
 }
 
+.tour-search-container {
+  width: 100%;
+  padding: 0 1.5rem;
+  margin-top: 10rem;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.tour-search-container .tour-search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width: 600px) {
+  .tour-search-container .tour-search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .tour-search-container .tour-search-form .btn-text {
+    width: 100%;
+  }
+}
+.tour-search-container .tour-search-form .input-wrapper {
+  text-align: left;
+  padding: 1rem;
+  border-radius: 5px;
+}
+@media (max-width: 600px) {
+  .tour-search-container .tour-search-form .input-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+}
+.tour-search-container .tour-search-form .input-wrapper .input-label {
+  color: #1d3557;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.tour-search-container .tour-search-form .input-wrapper .input-field {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+.tour-search-container .btn-text {
+  margin-top: 5rem;
+  padding: 0.4rem;
+  text-align: center;
+  width: 20%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -981,7 +1038,8 @@ html {
 }
 @media (max-width: 600px) {
   .header {
-    height: 50vh;
+    background-image: linear-gradient(to right bottom, rgba(235, 240, 234, 0.1), rgba(50, 128, 89, 0.8)), url(/img/hero.jpg);
+    height: 100vh;
   }
 }
 .header .logo-box {
@@ -1019,10 +1077,11 @@ html {
 @media (max-width: 600px) {
   .header .adventure-text .adventure-text-main {
     font-size: 5rem;
-    margin: 0 auto;
+    margin-top: 4rem;
     text-align: center;
     letter-spacing: 1.5rem;
     padding: 1rem;
+    overflow: hidden;
   }
 }
 .header .adventure-text .adventure-text-sub {
@@ -1047,9 +1106,13 @@ html {
 /* =================About Section=============== */
 .section-about {
   background-color: #f7f7f7;
-  height: 110vh;
   text-align: justify;
   padding: 2rem;
+}
+@media (max-width: 600px) {
+  .section-about {
+    height: 110vh;
+  }
 }
 
 .features-section {
@@ -1060,6 +1123,7 @@ html {
 
 .tour-package-section {
   padding: 5rem 0 38rem 0;
+  height: 85vh;
   background-color: #f7f7f7;
 }
 @media (max-width: 600px) {
