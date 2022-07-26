@@ -128,22 +128,41 @@
   transform: scale(0.95);
 }
 
+.feature-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 60%;
+  padding: 5rem 0;
+}
+@media (max-width: 600px) {
+  .feature-row {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    margin: 0 auto;
+  }
+}
+
 .feature-box {
   background-color: rgba(255, 255, 255, 0.7);
   font-size: 1.4rem;
-  padding: 2.5rem;
+  padding: 3rem;
   text-align: center;
   border-radius: 3px;
-  width: 30rem;
+  width: 27rem;
   height: 40rem;
   box-shadow: 0 1rem 2rem rgba(41, 41, 41, 0.9);
   transition: transform 0.2s;
-  margin-right: 6rem;
 }
 @media (max-width: 600px) {
   .feature-box {
-    width: 80%;
-    padding: 5rem;
+    width: 90%;
+    padding: 2rem 5rem;
     margin: 0 auto;
   }
 }
@@ -229,6 +248,59 @@
   width: 20%;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.top-place {
+  width: 60%;
+  height: 85vh;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+.top-place .top-place-title-wrap {
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid rgb(88, 185, 43);
+}
+.top-place .top-place-title-wrap .top-place-title {
+  border: 1px solid rgb(16, 3, 66);
+  font-size: 3.5rem;
+  color: rgba(29, 53, 87, 0.8);
+}
+.top-place .top-place-row {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid rgb(189, 11, 144);
+}
+.top-place .top-place-row .top-place-image {
+  border: 1px solid rgb(10, 98, 150);
+  width: 27rem;
+  height: 30rem;
+}
+.top-place .top-place-row .top-place-image img {
+  width: 27rem;
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid rgb(9, 158, 29);
+}
+.top-place .top-place-row .top-place-image .top-place-content {
+  border: 3px solid rgb(74, 90, 3);
+  background: linear-gradient(to bottom, transparent 0%, transparent 15%, rgba(0, 0, 0, 0.3) 99%, rgba(0, 0, 0, 0.4) 100%);
+}
+.top-place .top-place-row .top-place-image .top-place-content span {
+  border: 1px solid rgb(199, 107, 1);
+  font-size: 1.2rem;
+  display: inline-block;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  text-transform: capitalize;
+}
+.top-place .top-place-row .top-place-image .top-place-content .top-place-details {
+  border: 1px solid rgb(7, 67, 75);
+}
+.top-place .top-place-row .top-place-image .top-place-content .top-place-details p {
+  border: 1px solid rgb(2, 248, 195);
 }
 
 .card {
@@ -725,9 +797,6 @@
 .row .col-1-of-3 {
   width: calc((100% - 2 * 12rem) / 3);
 }
-.row .col-1-of-4 {
-  width: calc((100% - 3 * 12rem) / 4);
-}
 .row .col-2-of-4 {
   width: calc(
       2 * ((100% - 3 * 12rem) / 4) + 12rem
@@ -1116,7 +1185,6 @@ html {
 }
 
 .features-section {
-  padding: 10rem 0;
   background-image: linear-gradient(to right bottom, rgba(235, 240, 234, 0.425), rgba(50, 128, 89, 0.459)), url(/img/nat-4.jpg);
   background-size: cover;
 }
